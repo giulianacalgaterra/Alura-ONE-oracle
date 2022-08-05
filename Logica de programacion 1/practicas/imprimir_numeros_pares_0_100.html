@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+¿Listo para un ejercicio que te hará romper un poco la cabeza? Usando la instrucción while, imprime todos los números pares del 1 al 100 y al final imprime la palabra "FIN".
+
+<br>
+<br>
+
+
+<script type="text/javascript">
+	var numero = 0;
+
+	function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    imprimir("los numeros pares del 1 al 100 son: ");
+    
+    while( numero < 100){
+    		numero +=2;
+			imprimir (numero);  	
+
+    }
+
+	imprimir("FIN");
+</script>
+
+    
