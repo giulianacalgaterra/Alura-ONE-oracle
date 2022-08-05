@@ -19,15 +19,12 @@ Este programa, de acuerdo con la respuesta del usuario, debe mostrar el mensaje 
     var edad = parseInt(prompt("¿Cuál es tu edad?"));
     var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
 
-    if (edad >= 18) {
-        if (tieneLicencia == "S")
+    if (edad >= 18) && (tieneLicencia == "S"){
         imprimir ("puedes conducir");
-        if (tieneLicencia == "N") {
-        imprimir ("No puedes conducir"); 
-        }
+    
     }
 
-    if (edad < 18) {
+    else {
         imprimir ("No puedes conducir");
     }
 
