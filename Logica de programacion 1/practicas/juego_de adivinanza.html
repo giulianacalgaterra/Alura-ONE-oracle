@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+en base a un ejercicio dado por el profesor, se pide lo siguiente 1 – Crea una función de lotería que reciba un número n y sortee un número entre 0 a n, retornando ese valor. De esta forma, en vez de escribir var numeroPensado = Math.round(Math.random()*n);, escribirás var numeroPensado = sortea(n);. Realiza esa modificación, creando una nueva función y utilízala de forma correcta.
+
+2 – Hacer que tu juego exhiba, cuando el usuario falle el intento, si el número lanzado era mayor o menor al número pensando por el programa.
+<br>
+<br>
+
+<h1>PROGRAMA JUEGO DE ADIVINANZA </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function loteria (randomN){
+
+        return Math.round(Math.random()*randomN);
+
+    }
+
+    var numeroPensado = loteria (10);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+    if (numeroPensado == numeroLanzado){
+        imprimir("usted acertó")
+    }
+     else {
+        if (numeroLanzado > numeroPensado) {
+            imprimir("usted erró, el número lanzado era mayor al numero pensado por mi ");  
+        }
+        else{
+            imprimir("usted erró, el número lanzado era menor al numero pensado por mi ");  
+        }
+    }
+
+</script>
